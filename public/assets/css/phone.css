@@ -1,0 +1,53 @@
+
+.phone {
+    background: #000;
+    border-radius: 28px;
+    padding: 12px;
+    width: 320px;
+    height: 75vh;
+    min-height: 500px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 auto;
+    zoom: 1.1;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
+.phone .screen .screen-menu {
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+.phone.ios .screen {
+    background: #fff;
+    min-height: 72vh;
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+.phone.ios .screen-menu {
+    padding: 0.75rem;
+    border-radius: 1rem;
+}
+.phone.ios:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid #16252f;
+    border-radius: 2rem;
+}
+.phone.ios:after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 80px;
+    width: 3.5px;
+    height: 200px;
+    background-size: 100%;
+}
